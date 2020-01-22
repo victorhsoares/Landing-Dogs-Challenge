@@ -1,0 +1,673 @@
+*{
+	text-decoration: none;
+
+}
+body{
+	margin: 0%;
+}
+header{
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.25rem 4% 0.25rem 6%;
+}
+
+nav{
+	width: 50%;
+}
+.menuresponsive{
+	display: none;
+}
+.headerlist{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+
+
+}
+
+li{
+	font-size: 0.8em;
+	font-weight: 600;
+	list-style: none;
+	font-family: urbane-rounded, sans-serif;
+
+}
+p{
+	font-family: urbane-rounded, sans-serif;
+}
+.headertitle{
+	margin: 0;
+	color: #00CA88;
+	font-size: 2.2em;
+	font-family: urbane-rounded, sans-serif;
+}
+.headertitle::after {
+	content: url(assets/Patinhas.svg);
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 0;
+}
+
+.menuLink, .menuLinkhome{
+	/* margin: 0.7rem; */
+	font-size: 1.8em;
+	color: #00CA88;
+}
+.menuLinkhome::after{
+	content: url(assets/Patinhas.svg);
+}
+@media (max-width: 768px){
+	nav{
+		width: 65%;
+	}
+}
+@media (max-width: 480px){
+	header {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+	nav{
+		display: flex;
+    justify-content: center;
+	}
+	.menuresponsive{
+		display: flex;
+		color: #00CA88;
+		font-size: 12px;
+		font-family: urbane-rounded, sans-serif;
+	}
+	.headerlist{
+	display: none;
+	}
+
+}
+
+		/* FIM DO HEADER */
+
+		   /* INICIO MAIN */
+
+#Adotebox{
+	height: 95vh;
+	width: 100%;
+	/* background: #00CA88;
+	opacity: 0.42; */
+	/* position: absolute; */
+	/* z-index: 10; */
+	background-position: center;
+	background-image: url(assets/primedog1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.Content{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #00CA8842;
+}
+.Adoteboxcenter{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.Adoteboxtitle{
+	color: #FFFFFF;
+	font-size: 60px;
+	font-family: urbane-rounded, sans-serif;
+	margin-bottom: 0;
+	text-shadow: 0px 3px 6px #00000029;
+}
+.Adoteboxparagraph{
+	width: 75%;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: urbane-rounded, sans-serif;
+
+}
+.columnstart{
+	height: 100%;
+	width: 7%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	padding-top: 2rem;
+}
+.columnstartimage{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 9rem;
+}
+.columnstartborder{
+		height: 9rem;
+		border-left: 0.15rem solid;
+		color: #FFFFFF;
+		margin: 3rem 0 7rem 0;
+		/* position: absolute; */
+		/* top: 12rem; */
+		/* left: 1.8rem; */
+	
+}
+.columnstartparagraph{
+	transform: rotate(270deg);
+	color: #fff;
+	/* position: absolute; */
+	/* font-weight: bold; */
+	/* bottom: 13rem; */
+	/* left: -3.5rem; */
+	font-size: 20px;
+	font-family: urbane-rounded, sans-serif;
+}
+.Adoteboxverdebranco{
+	width: 80%;
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.Adotebutton, .sobrebutton{
+	height: 50px;
+	padding: 0 2rem;
+	font-size: 1rem;
+	font-family: urbane-rounded, sans-serif;
+	font-weight: bold;
+	display: flex;
+	border-radius: 35px;
+	box-shadow: 0px 3px 6px #00000029;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	color: #FFFFFF;
+	background: #00CA88;
+}
+
+.second-button{
+	background: #FFFFFF;
+	color: #00CA88;
+}
+@media (max-width: 480px){
+	#Adotebox{
+		text-align: center;
+	}
+	.columnstart{
+		display: none;
+	}
+	.Adoteboxverdebranco{
+
+		flex-wrap: wrap;
+	}
+	.Adotebutton{
+		display: flex;
+		justify-content: center;
+		width: 85%;
+		margin-bottom: 20px;
+	}
+}
+							/* FIM DA PRIMEIRA SEÇÃO */
+
+							/* INICIO SEGUNDA SEÇÃO */
+
+#sobrebox{
+	width: 95%;
+	min-height: 90vh;
+	padding: 0;
+	padding-bottom: 5%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #FFFFFF;
+
+}
+.sobreboxescrita{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+.sobreboxtitle{
+	display: flex;
+	text-align: start;
+	color: #00CA88;
+	margin-bottom: 0;
+	font-size: 55px;
+	font-family: urbane-rounded, sans-serif;
+	text-shadow: 0px 3px 6px #00000029;
+}
+.sobreboxparagraph{
+	width: 100%;
+	font-size: 14px;
+	font-family: urbane-rounded, sans-serif;
+}
+.sobrebox--downboxgreen{
+	height: 2.8em;
+	width: 17em;
+	display: flex;
+	text-align: center;
+	border-radius: 2em;
+	background: #00CA88;
+}
+.sobrebox--downboxparagraph{
+	font-size: 22px;
+	margin:0 0 0em 3em;
+	color: #FFFFFF;
+	/* font-weight: bold; */
+	font-family: urbane-rounded, sans-serif;
+}
+.sobreboxpic{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.sobreboxpicdog{
+	height: 310px;
+	width: 310px;
+	z-index: 2;
+}
+.sobrebutton{
+	align-self: center;
+	height: 42px;
+	margin-top: 14px;
+}
+.sobreboxcirculotop{
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	top: 6.5rem;
+	left: 13.5rem;
+}
+.sobreboxcirculocenter{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 18rem ;
+	left: 13rem ;
+} 
+.sobreboxcirculobottom{
+	height: 55px;
+	width: 55px;
+	position: absolute;
+	bottom: 3rem;
+	left: 8rem;
+}
+@media (max-width: 768px){
+	.sobreboxcirculocenter{
+		display: none;	
+	}
+}
+@media (max-width: 480px){
+	.sobreboxescrita{
+		width: 71%;
+		display: flex;
+		flex-direction: column;
+	}
+	.sobreboxpic{
+		display: none;
+	}
+}
+							/* FIM DA SEGUNDA SEÇÃO */
+
+							/* INICIANDO TERCEIRA SEÇÃO */
+#dogslide{
+	width: 96%;
+	min-height: 90vh;
+	padding-left: 4%;
+	padding-bottom: 5%;
+	/* display: flex; */
+	justify-content: space-between;
+	background-color: #00CA88;
+}
+.primedogslide{
+	display: flex;
+	justify-content: space-around;
+}
+.dogslidetextbox{
+	width: 38%;
+	display: flex;
+	/* line-height: 0.3rem; */
+	flex-direction: column;
+	padding: 20px;
+}
+.boxcirculo{
+	width: 38%;
+	position: relative;
+}
+.dogslidecirculo1{
+	height: 110px;
+	width: 110px;
+	position: absolute;
+	top: 4rem;
+	left: 10rem;
+
+}
+.dogslidecirculo2{
+	height: 210px;
+	width: 210px;
+	position: absolute;
+	right: -1rem;
+}
+.dogslidebox{
+	display: flex;
+	justify-content: space-around;
+    padding-left: 4.5%;
+
+}
+@media (max-width: 768px){
+	.dogslidebox {
+		padding: 0;
+	}
+}
+.dogslideboxtitle{
+	font-size: 57px;
+	/* font-weight: bold; */
+	font-family: urbane-rounded, sans-serif;
+	margin-bottom: 0;
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px #00000029;
+}
+.dogslideparagraph{
+	margin-bottom: 35px;
+	font-size: 14px;
+	font-family: urbane-rounded, sans-serif;
+	color: #FFFFFF;	
+}
+.dogslidecontent{
+	text-align: center;
+	
+}
+.dogslideborderbox{
+	height: 170px;
+	width: 170px;
+	position: relative;
+	border-radius: 10px;
+	border: solid;
+	border-color: #FFFFFF; 
+}
+.dogslideboxnamedog{
+	font-size: 19px;
+	font-family: urbane-rounded, sans-serif;
+	margin-bottom: 0;
+	color: #FFFFFF;	
+}
+.dogslideboxparagraph{
+	font-size: 14px;
+	font-family: urbane-rounded, sans-serif;
+	color: #FFFFFF;	
+}
+.dogslideboxbutton{
+	display: none;
+   }
+.dogslideboximageluna{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -0.5rem;
+	left: -0.7rem;
+	border-radius: 10px;
+	background-position: center;
+	background-image: url(assets/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.dogslideboximageduque{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -0.5rem;
+	left: -0.7rem;
+	border-radius: 10px;
+	background-position: center;
+	background-image: url(assets/2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.dogslideboximageperola{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -0.5rem;
+	left: -0.7rem;
+	border-radius: 10px;
+	background-position: center;
+	background-image: url(assets/3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.dogslideboximagethor{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -0.5rem;
+	left: -0.7rem;
+	border-radius: 10px;
+	background-position: center;
+	background-image: url(assets/4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxseta{
+	display: flex;
+	align-items: center;
+	height: 170px;
+	width: 85px;
+}
+.paragraphseta{
+	display: none;
+}
+
+@media (max-width: 480px){
+	#dogslide{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.boxcirculo{
+		display: none;
+	}
+	.dogslidecontent{
+		display: flex;
+		margin-bottom: 1rem;
+		/* justify-content: space-around; */
+	}
+	.dogslidebox{
+		flex-direction: column;
+	}
+	.dogslideborderbox{
+		border: none;
+	}
+	.dogslideboxtext{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		
+
+	}
+	.dogslidetextbox{
+		width: 90%;
+		text-align: left;
+	}
+	.dogslideboxbutton{
+		display: flex;
+		justify-content: center;
+		border: none;
+		border-radius: 35px;
+		background: transparent;
+		outline: none;
+		color: #FFFFFF;
+		border: 3px solid #FFFFFF;
+		width: 122px;
+		height: 42px;
+	}
+	.boxseta{
+		width: 88%;
+		display: flex;
+		justify-content: center;
+		transform: rotate(90deg);
+	}
+	.paragraphseta{
+		display: flex;
+		transform: rotate(270deg);
+		font-size: 18px;
+		font-family: urbane-rounded, sans-serif;
+		color: #FFFFFF;
+		margin: 0;
+	}
+}
+																 /* FICHA.HTML */
+.Fichabox{
+	padding: 100px 0;
+	width: 100%;
+	/* height: 50vh; */
+	display: flex;
+	justify-content: center;
+	background: #00B77A42;
+
+}
+.Fichaboxform{
+	height: 679px;
+	width: 684px;
+	border-radius: 35px;
+	background-color: #FFFFFF;
+}
+.Fichaboximgp{
+	width: 50%;
+}
+.Fichaboxprime{
+	width: 90%;
+	padding: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.Fichaboxtext{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.Fichaboximage{
+	height: 219px;
+	width: 219px;
+	border-radius: 35px;
+	background-position: center;
+	background-image: url(assets/1.jpg);
+	background-size: cover;
+}
+.Fichaboxparagraph{
+	font-weight: bold;
+	font-size: 22px;
+	font-family: urbane-rounded, sans-serif;
+	color: #00CA88;
+}
+.Fichaboxtextdescrition{
+	font-size: 21px;
+	font-family: urbane-rounded, sans-serif;
+	
+}
+
+.Fichaboxdados input{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: urbane-rounded, sans-serif;
+	outline: none;
+	text-align: center;
+	height: 47px;
+	border-radius: 35px;
+	border: 1px solid #707070; 
+	background: transparent;
+}
+.Fichaboxdados input::placeholder{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: urbane-rounded, sans-serif;
+	text-align: center;
+
+}
+
+								/* FOOTER */
+footer{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #F8F8F8;
+	position: relative;
+}
+.footertitle{
+	margin: 0;
+	color: #00CA88;
+	font-size: 60px;
+	font-family: urbane-rounded, sans-serif;
+}
+.footertitle::after {
+	content: url(assets/Patinhas.svg);
+	/* width: 30px;
+	height: 45px; */
+	position: absolute;
+	bottom: 12rem;
+}
+.boxcontact{
+	width: 30%;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+}
+/* .contatofooter{
+		line-height: 1em;
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+} */
+.picboxfooter{
+	display: flex;
+	/* align-self: center; */
+	flex-direction: column;
+	padding: 80px;
+}
+ .paragraphfooter{
+	font-size: 20px;
+	color: #00CA88;
+}
+.footertext{
+	width: 30%;
+}
+.boxlink{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	border-left: 0.15rem solid;
+	border-color: #00CA88;
+}
+.footerlist{
+	font-size: 1.9em;
+	color: #00CA88;
+}
+@media (max-width: 768px){
+	
+    .boxcontact{
+		display: none;
+	}
+	.boxlink{
+		display: none;
+	}
+	.picboxfooter{
+		padding: 40px;
+	}
+	.footertext{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.paragraphfooter{
+		font-size: 1.5em;
+	}
+}
+/* @media (max-width: 768px){
+
+} */
